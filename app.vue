@@ -34,11 +34,16 @@
             :class="options.length === 'Short' && 'options-active'">Short</button>
         </div>
       </div>
+
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { $URL } from 'ufo';
+const aaa = 'aaa'
+
+console.dir(globalThis.window)
 
 interface OptinsState {
   gender: string;
@@ -103,4 +108,5 @@ const options: OptinsState = reactive({
 
 }
 
-.options-buttons {}</style>
+.options-buttons {}
+</style>
